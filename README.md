@@ -5,25 +5,25 @@
 # 二、设计模式三大分类
 
 ### 1. 创建型模式（共5种）
-  - [工厂方法模式（Factory Method Pattern）]()
-  - [抽象工厂模式（Abstract Factory Pattern）]()
-  - [单例模式（Singleton Pattern）]()
-  - [建造者模式（Builder Pattern）]()
-  - [原型模式（Prototype Pattern）]()
+  - [工厂方法模式（Factory Method Pattern）](https://github.com/MaugerWu/Design_Pattern)
+  - [抽象工厂模式（Abstract Factory Pattern）](https://github.com/MaugerWu/Design_Pattern)
+  - [单例模式（Singleton Pattern）](https://github.com/MaugerWu/Design_Pattern)
+  - [建造者模式（Builder Pattern）](https://github.com/MaugerWu/Design_Pattern)
+  - [原型模式（Prototype Pattern）](https://github.com/MaugerWu/Design_Pattern)
   
 ### 2. 结构型模式（共7种）
-  - [适配器模式（Adapter Pattern）]()
-  - [装饰者模式（Decorator Pattern）]()
-  - [代理模式（Proxy Pattern）]()
-  - [外观模式（Facade Pattern）]()
-  - [桥接模式（Bridge Pattern）]()
-  - [组合模式（Composite Pattern）]()
-  - [享元模式（Flyweight Pattern）]()
+  - [适配器模式（Adapter Pattern）](https://github.com/MaugerWu/Design_Pattern)
+  - [装饰者模式（Decorator Pattern）](https://github.com/MaugerWu/Design_Pattern)
+  - [代理模式（Proxy Pattern）](https://github.com/MaugerWu/Design_Pattern)
+  - [外观模式（Facade Pattern）](https://github.com/MaugerWu/Design_Pattern)
+  - [桥接模式（Bridge Pattern）](https://github.com/MaugerWu/Design_Pattern)
+  - [组合模式（Composite Pattern）](https://github.com/MaugerWu/Design_Pattern)
+  - [享元模式（Flyweight Pattern）](https://github.com/MaugerWu/Design_Pattern)
   
 ### 3. 行为型模式（共11种）
-  - [策略模式（Strategy Pattern）]()
+  - [策略模式（Strategy Pattern）](https://github.com/MaugerWu/Design_Pattern)
   - 模板方法模式（Template Method Pattern）
-  - [观察者模式（Observer Pattern）]()
+  - [观察者模式（Observer Pattern）](https://github.com/MaugerWu/Design_Pattern)
   - 迭代器模式（Iterator Pattern）
   - 责任链模式（Chain Of Responsibility Pattern）
   - 命令模式（Command Pattern）
@@ -61,7 +61,7 @@
 
 **5. 迪米特法则（Demeter Principle, DP)：** 一个软件实体应当尽可能少地与其他实体发生相互作用。
 
-&emsp;&emsp;迪米特法则又称为`最少知识原则(LeastKnowledge Principle, LKP)`。一个类对自己依赖的类知道的越少越好。无论被依赖的类多么复杂，都应该将逻辑封装在方法的内部，通过public方法提供给外部。这样当被依赖的类变化时，才能最小的影响该类。
+&emsp;&emsp;迪米特法则又称为**最少知识原则(LeastKnowledge Principle, LKP)**。一个类对自己依赖的类知道的越少越好。无论被依赖的类多么复杂，都应该将逻辑封装在方法的内部，通过public方法提供给外部。这样当被依赖的类变化时，才能最小的影响该类。
 
 &emsp;&emsp;最少知道原则的另一个表达方式是：只与直接的朋友通信。类之间只要有耦合关系，就叫朋友关系。耦合分为依赖、关联、聚合、组合等。我们称出现为成员变量、方法参数、方法返回值中的类为直接朋友。局部变量、临时变量则不是直接的朋友。我们要求陌生的类不要作为局部变量出现在类中。
 
