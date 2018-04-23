@@ -21,8 +21,8 @@
   - 享元模式（Flyweight Pattern）
   
 ### 3. 行为型模式（共11种）
-  - 策略模式（Strategy Pattern）
-  - 模板方法模式（Template Method Pattern）
+  - [策略模式（Strategy Pattern）](https://github.com/MaugerWu/Design_Pattern/blob/master/Behavior/Strategy.java)
+  - [模板方法模式（Template Method Pattern）](https://github.com/MaugerWu/Design_Pattern/blob/master/Behavior/TemplateMethod.java)
   - 观察者模式（Observer Pattern）
   - 迭代器模式（Iterator Pattern）
   - 责任链模式（Chain Of Responsibility Pattern）
