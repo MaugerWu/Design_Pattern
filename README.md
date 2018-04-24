@@ -5,8 +5,8 @@
 # 二、设计模式三大分类
 
 ### 1. 创建型模式（共5种）
-  - [工厂方法模式（Factory Method Pattern）](https://github.com/MaugerWu/Design_Pattern/blob/master/Create/IFactory.java)
-  - [抽象工厂模式（Abstract Factory Pattern）](https://github.com/MaugerWu/Design_Pattern/blob/master/Create/IFactory.java)
+  - [工厂方法模式（Factory Method Pattern）](https://github.com/MaugerWu/Design_Pattern/blob/master/Create/FactoryMethod.java)
+  - [抽象工厂模式（Abstract Factory Pattern）](https://github.com/MaugerWu/Design_Pattern/blob/master/Create/AbstractFactory.java)
   - [单例模式（Singleton Pattern）](https://github.com/MaugerWu/Design_Pattern/blob/master/Create/Singleton.java)
   - [建造者模式（Builder Pattern）](https://github.com/MaugerWu/Design_Pattern/blob/master/Create/Builder.java)
   - [原型模式（Prototype Pattern）](https://github.com/MaugerWu/Design_Pattern/blob/master/Create/Prototype.java)
