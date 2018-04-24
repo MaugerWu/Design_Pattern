@@ -51,9 +51,10 @@ public interface Strategy {
  * @date 2018年4月20日  
  * @version 1.0
  */
-class StrategyA implements Strategy {
-	
-	public void doSomething() {
+class StrategyA implements Strategy
+{
+	public void doSomething()
+	{
 		System.out.println("具体策略A.");
 	}
 }
@@ -65,8 +66,8 @@ class StrategyA implements Strategy {
  * @date 2018年4月20日  
  * @version 1.0
  */
-class StrategyB implements Strategy {
-	
+class StrategyB implements Strategy
+{
 	public void doSomething() {
 		System.out.println("具体策略B.");
 	}
@@ -79,15 +80,17 @@ class StrategyB implements Strategy {
  * @date 2018年4月20日  
  * @version 1.0
  */
-class Context {
-	
+class Context
+{
 	private Strategy strategy;
 	
-	public Context(Strategy strategy) {
+	public Context(Strategy strategy)
+	{
 		this.strategy = strategy;
 	}
 	
-	public void excute() {
+	public void excute()
+	{
 		strategy.doSomething();
 	}
 }
@@ -99,10 +102,10 @@ class Context {
  * @date 2018年4月20日  
  * @version 1.0
  */
-class StrategyTest {
-	
-	public static void main(String[] args) {
-		
+class StrategyTest
+{
+	public static void main(String[] args)
+	{
 		Context context;
 		System.out.println("执行策略A：");
 		context = new Context(new StrategyA());

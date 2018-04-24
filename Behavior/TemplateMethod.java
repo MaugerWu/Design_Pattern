@@ -38,24 +38,27 @@ import java.util.Arrays;
  * @date 2018年4月20日  
  * @version 1.0
  */
-public class TemplateMethod extends AbstractSort {
-
+public class TemplateMethod extends AbstractSort
+{
 	@Override
-	protected void sort(int[] arr) {
-		
-	    for(int i = 0; i < arr.length - 1; i++) {
+	protected void sort(int[] arr)
+	{
+	    for(int i = 0; i < arr.length - 1; i++)
+	    {
 	        selectSort(arr, i);
 	    }
 	}
 
-    private void selectSort(int[] array, int index) {
-    	
+    private void selectSort(int[] array, int index)
+    {
         int minValue = 32767; // 最小值变量
         int minIndex = 0; // 最小值索引变量
         int temp; // 暂存变量
         
-        for (int i = index; i < array.length; i++) {
-            if (array[i] < minValue){ // 找到最小值
+        for (int i = index; i < array.length; i++)
+        {
+            if (array[i] < minValue) // 找到最小值
+            {
                 minValue = array[i]; // 储存最小值
                 minIndex = i; 
             }
@@ -74,8 +77,8 @@ public class TemplateMethod extends AbstractSort {
  * @date 2018年4月20日  
  * @version 1.0
  */
-abstract class AbstractSort {
-	
+abstract class AbstractSort
+{
 	/**
 	 * 将数组进行正序排序
 	 * @param array 数组
@@ -86,8 +89,8 @@ abstract class AbstractSort {
 	 * 打印出排序后的数组
 	 * @param array 数组
 	 */
-	public void showSortResult(int[] array) {
-		
+	public void showSortResult(int[] array)
+	{
 		this.sort(array);
 		System.out.println(Arrays.toString(array));
 	}
@@ -100,10 +103,10 @@ abstract class AbstractSort {
  * @date 2018年4月20日  
  * @version 1.0
  */
-class Test {
-	
-	public static void main(String[] args) {
-		
+class Test
+{
+	public static void main(String[] args)
+	{
 		int[] array = { 119, 3, 9, 120, 5, 7, 2, 110 };
 		AbstractSort as = new TemplateMethod();
 		as.showSortResult(array);
