@@ -35,8 +35,8 @@ package com.cqupt.mauger.create;
  * 
  * 抽象建造者类
  */
-public abstract class Builder {
-
+public abstract class Builder
+{
 	public abstract void setPart(String name, String type);
     public abstract ProductB getProduct();
 }
@@ -48,30 +48,34 @@ public abstract class Builder {
  * @date 2018年4月20日  
  * @version 1.0
  */
-class ProductB {
-	
+class ProductB
+{
 	private String name;
 	private String type;
 	
-	public void showProduct() {
-		
+	public void showProduct()
+	{
 		System.out.println("名称：" + name);
 		System.out.println("型号：" + type);
 	}
 	
-	public String getName() {
+	public String getName()
+	{
 		return name;
 	}
 	
-	public void setName(String name) {
+	public void setName(String name)
+	{
 		this.name = name;
 	}
 	
-	public String getType() {
+	public String getType()
+	{
 		return type;
 	}
 	
-	public void setType(String type) {
+	public void setType(String type)
+	{
 		this.type = type;
 	}
 }
@@ -84,19 +88,20 @@ class ProductB {
  * @date 2018年4月20日  
  * @version 1.0
  */
-class ConcreateBuilder extends Builder {
-
+class ConcreateBuilder extends Builder
+{
 	private ProductB product = new ProductB();
 	
 	@Override
-	public void setPart(String name, String type) {
-		
+	public void setPart(String name, String type)
+	{
 		product.setName(name);
 		product.setType(type);
 	}
 
 	@Override
-	public ProductB getProduct() {
+	public ProductB getProduct()
+	{
 		return product;
 	}
 }
@@ -109,18 +114,18 @@ class ConcreateBuilder extends Builder {
  * @date 2018年4月20日  
  * @version 1.0
  */
-class Director {
-	
+class Director
+{
 	private Builder builder = new ConcreateBuilder();
 	
-	public ProductB getAProductB() {
-		
+	public ProductB getAProductB()
+	{
 		builder.setPart("BMW", "x6");
 		return builder.getProduct();
 	}
 	
-	public ProductB getBProductB() {
-		
+	public ProductB getBProductB()
+	{
 		builder.setPart("Audi", "a6");
 		return builder.getProduct();
 	}
@@ -133,10 +138,10 @@ class Director {
  * @date 2018年4月20日  
  * @version 1.0
  */
-class BuilderTest {
-	
-    public static void main(String[] args) {
-    	
+class BuilderTest
+{
+    public static void main(String[] args)
+    {
         Director director = new Director();
         ProductB product1 = director.getAProductB();
         product1.showProduct();
