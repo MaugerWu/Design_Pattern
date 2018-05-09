@@ -1,8 +1,8 @@
-# 一、设计模式简介
+## 一、设计模式简介
 
 &emsp;&emsp;设计模式是一套被反复使用、多数人知晓的、经过分类编目的、代码设计经验的总结。使用设计模式是为了可重用代码、让代码更容易被他人理解、保证代码可靠性。
 
-# 二、设计模式三大分类
+## 二、设计模式三大分类
 
 ### 1. 创建型模式（共5种）
   - [工厂方法模式（Factory Method Pattern）](https://github.com/MaugerWu/Design_Pattern/blob/master/Create/FactoryMethod.java)
@@ -33,7 +33,7 @@
   - 中介者模式（Mediator Pattern）
   - 解释器模式（Interpreter Pattern）
 
-# 三、设计模式六大原则
+## 三、设计模式六大原则
 
 **1. 单一职责原则（Single Responsibility Principle, SRP）：** 一个类只负责一个功能领域中的相应职责，或者可以定义为：就一个类而言，应该只有一个引起它变化的原因。
 
@@ -74,3 +74,7 @@
 **6. 开闭原则（Open Closed Principle, OCP）：** 一个软件实体如类、模块和函数应该对扩展开放，对修改关闭。
 
 &emsp;&emsp;开闭原则是面向对象的可复用设计的第一块基石，它是最重要的面向对象设计原则。在开闭原则的定义中，软件实体可以指一个软件模块、一个由多个类组成的局部结构或一个独立的类。
+
+## 四、设计模式之间的关系图
+
+![](http://dl.iteye.com/upload/attachment/0083/1179/57a92d42-4d84-3aa9-a8b9-63a0b02c2c36.jpg)
